@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Zalansol</title>
+
+    <!-- Bloquer le viewport - ici, c'est une app! Pas de zoom. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <!-- Fonts google pour les icônes et la police par défaut -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" />
+
+    <!-- Stylesheet principale -->
+    <link rel="stylesheet" href="css/index.css" />
+
+
+
+    <!-- Javascript principal -->
+    <script src="index.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images/logo_zalansol.png" />
+        Zalansol
+      </div>
+    </header>
+
+    <main>
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="home-section" class="active">
+        <h1 class="hero">Bienvenue sur Zalansol</h1>
+        <p class="caption">
+          As a leading European online platform for fashion and lifestyle we deliver to customers in
+          23 countries. In our fashion store, they can find a wide assortment from more than 5,800 brands.
+        </p>
+
+        <div class="category-list">
+          <a href="#categories-[id]">Une catégorie</a>
+          <a href="#categories-[id]">Une autre catégorie</a>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="products-section">
+        <h4>Produits</h4>
+
+        <div class="product-list">
+
+          <template id="product-template">
+
+          <article class="product-list-item">
+            <!-- Utilisez ce bouton pour linker l'évent de l'ajout au panier -->
+            <button type="button" class="icon-button cart-button">
+              <!-- Modifier cet icône pour montrer si l'article est dans le panier ou non. Son inverse est remove_shopping_cart -->
+              <span class="material-icons">add_shopping_cart</span>
+            </button>
+
+            <!-- Utilisez ce <a> pour lier l'url de la page du produit -->
+            <a href="#products-[id]" class="product-list-item-image-link">
+              <!-- Utilisez cette image pour afficher l'image du produit -->
+              <img src="http://placekitten.com/600/600" />
+            </a>
+
+            <div class="product-list-item-footer">
+              <!-- Utilisez ce <div> pour afficher le nom du produit -->
+              <div class="product-list-item-name">
+                Chemise
+              </div>
+
+              <!-- Utilisez ce <a> pour afficher le nom de la catégorie et lier l'url de la page de la catégorie -->
+              <a href="#categories-[id]" class="product-list-item-category">
+                Habits
+              </a>
+            </div>
+          </article>
+
+          </template>
+        </div>
+      </section>
+
+
+     <!------------------------------------------------------------------------------------------------------------>
+
+  
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="product-section">
+        <h4>Produits > Une Chemise</h4>
+
+        <!-- Utilisez ce <a> pour afficher le nom de la catégorie et lier l'url de la page de la catégorie -->
+        <a href="#categories-[id]" class="product-category-link">
+          Habits
+        </a>
+
+        <div class="product-image-wrapper">
+          <!-- Utilisez cette image pour afficher l'image du produit -->
+          <img src="http://placekitten.com/600/600" />
+        </div>
+      </section>
+
+
+
+      <section id="card-section">
+        <h4></h4>
+        <div>
+
+        </div>
+      </section>
+
+
+      <!------------------------------------------------------------------------------------------------------------>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#home" class="active">
+          <span class="material-icons">home</span>
+          <span>Home</span>
+        </a>
+        <a href="#products">
+          <span class="material-icons">inventory_2</span>
+          <span>Produits</span>
+        </a>
+        <a href="#cart">
+          <span class="material-icons">shopping_cart</span>
+          <span>Panier</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

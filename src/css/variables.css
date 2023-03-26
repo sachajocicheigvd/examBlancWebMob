@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --primary-color: #ff6900;
+  --primary-color-dark: #ff6900;
+  --secondary-color: #181818;
+  --bg-color: #fafafa;
+  --text-color: #262626;
+  --border-color: #dbdbdb;
+  --grey-light: #9c9c9c;
+
+  /* Globals */
+  --border-radius: 10px;
+
+  /* Animations */
+  /*
+    on ne spécifie que la durée et la fonction de timing. Cela permet d'avoir des animations homogènes, mais de laisser
+    à l'élément le libre choix de l'/les attributs à animer. Voir fichiers CSS pour exemples
+  */
+  --default-transition: 300ms ease-in-out;
+}

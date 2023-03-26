@@ -1,0 +1,103 @@
+
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-list a {
+  width: calc(25% - 17px);
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  outline: none;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/************************************************************************/
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-list .product-list-item {
+  width: calc(33% - 20px);
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.product-list .product-list-item .cart-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 34px;
+  width: 34px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+.product-list .product-list-item .cart-button .material-icons {
+  color: var(--primary-color);
+}
+
+.product-list .product-list-item .product-list-item-footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-list .product-list-item .product-list-item-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.product-list .product-list-item .product-list-item-category {
+  outline: none;
+  text-decoration: none;
+}
+
+.product-list .product-list-item .product-list-item-category:before {
+  font-family: 'Material Icons';
+  content: 'label';
+  vertical-align: middle;
+  color: var(--primary-color);
+}
+
+.product-list .product-list-item .product-list-item-image-link {
+  display: block;
+  height: 300px;
+}
+
+.product-list .product-list-item .product-list-item-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+  .product-list .product-list-item {
+    width: 100%;
+  }
+  
+}

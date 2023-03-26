@@ -1,0 +1,16 @@
+{
+  "short_name": "Zalansol",
+  "name": "Zalansol - Unleash the JS",
+  "icons": [
+    {
+      "src": "/src/images/logo_zalansol.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ff6900"
+}
