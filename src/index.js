@@ -6,6 +6,19 @@ import JsonStorage from './lib/JsonStorage'
 import {afficheCategorie} from './sections/categorie'
 myStorage = new JsonStorage();
 
+
+/* vérifier si en ligne
+ */
+
+window.addEventListener('offline', function() {
+  alert('vous devez être en ligne au vu de la connextion a des api externe');
+});
+
+
+
+
+
+
 /* mon service worker
  */
 if ('serviceWorker' in navigator) {
