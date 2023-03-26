@@ -6,8 +6,16 @@ import JsonStorage from './lib/JsonStorage'
 import {afficheCategorie} from './sections/categorie'
 myStorage = new JsonStorage();
 
+/* mon service worker
+ */
+if ('serviceWorker' in navigator) {
+ 
+  navigator.serviceWorker.register(
+    new URL('./workerCacheFetched.js', import.meta.url),
+    { type: 'module' }
+   )    
 
-
+}
 
 function toggleSection(section) {
   document.querySelector('section.active')?.classList.remove('active')
